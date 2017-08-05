@@ -17,7 +17,7 @@ function dibujarLaberinto(){
       var fila = document.createElement("tr");
       for(var j = 0; j < mapa[i].length; j++){
         var columna= document.createElement("td");
-        columna.innerText=mapa[i][j]
+        //columna.innerText=mapa[i][j]
         if(mapa[i][j]=="*"){
           columna.setAttribute("class","colorCelda");
         }

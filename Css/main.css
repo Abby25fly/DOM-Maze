@@ -1,9 +1,18 @@
 .colorCelda{
-  background-color: black;
+  background-image: url("block2.png");
+  background-size: 30px 30px;
 }
-
 
 td{
   width: 30px;
   height: 30px;
+}
+
+body {
+    background: #fcfaef;
+    text-align: center;
+    margin: 100px auto;
+    width: 80%;
+    padding: 20 40px;
+    font: 14px;
 }
