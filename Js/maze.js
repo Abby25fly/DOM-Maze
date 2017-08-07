@@ -17,6 +17,7 @@ var mapa=[
 "******************"];
 
 function dibujarLaberinto(){
+  var tabla=document.createElement("table");
     for(var i = 0; i < mapa.length; i++){
       var fila = document.createElement("tr");
       for(var j = 0; j < mapa[i].length; j++){
@@ -35,8 +36,9 @@ function dibujarLaberinto(){
         }
         fila.appendChild(celda);
       }
-      mostrar.appendChild(fila);
+      tabla.appendChild(fila);
     }
+    mostrar.appendChild(tabla);
 }
 
 dibujarLaberinto();
