@@ -1,29 +1,41 @@
+var mostrar = document.getElementById("mostrarLaberinto");
+var izquierda = document.getElementById("Izquierda");
+var avanzar = document.getElementById("Avanzar");
+var derecha = document.getElementById("Derecha");
+
 var mapa=[
 "******************",
-"*_________*______*",
+"*________**______*",
 "*_*****_____******",
 "*______***__*__*_*",
 "***_*____*____**_*",
 "*___*____**__*___*",
 "*_********__**_*_*",
 "*____*______*__*_*",
-"*_**_*__*****_**_*",
+"*_**_**_*****_**_*",
 "*o*__*________**W*",
-"*_**************_*"];
+"******************"];
 
 function dibujarLaberinto(){
-  var mostrar = document.getElementById("mostrarLaberinto");
     for(var i = 0; i < mapa.length; i++){
       var fila = document.createElement("tr");
       for(var j = 0; j < mapa[i].length; j++){
-        var columna= document.createElement("td");
-        //columna.innerText=mapa[i][j]
+        var celda = document.createElement("td");
         if(mapa[i][j]=="*"){
-          columna.setAttribute("class","colorCelda");
+          celda.setAttribute("class","colorPared");
         }
-        fila.appendChild(columna);
-        mostrar.appendChild(fila);
+        else if (mapa[i][j] == "_"){
+          celda.setAttribute("class","colorLaberinto");
+        }
+        else if(mapa[i][j]=="o"){
+          celda.setAttribute("class","colorStart");
+        }
+        else if(mapa[i][j]=="W"){
+          celda.setAttribute("class","colorEnd");
+        }
+        fila.appendChild(celda);
       }
+      mostrar.appendChild(fila);
     }
 }
 

@@ -1,18 +1,49 @@
-.colorCelda{
-  background-image: url("block2.png");
-  background-size: 30px 30px;
-}
-
-td{
-  width: 30px;
-  height: 30px;
+h1{
+  font-size: 60px;
+  color: black;
+  font-family: cursive;
 }
 
 body {
-    background: #fcfaef;
+    background-image: url("greengrass.jpg");
     text-align: center;
-    margin: 100px auto;
-    width: 80%;
-    padding: 20 40px;
-    font: 14px;
+}
+
+.colorPared{
+  background-image: url("block2.png");
+  background-size: 34px 34px;
+}
+
+.colorLaberinto{
+  background-color: #095606;
+}
+.colorLaberinto:hover{
+  background-color: silver;
+}
+
+.colorStart{
+  background-image: url("start2.png");
+  background-size: 34px 34px;
+}
+.colorEnd{
+  background-color: orange;
+}
+
+button {
+    background-color: #30302e;
+    border: none;
+    color: white;
+    padding: 12px 29px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+td{
+  width: 34px;
+  height: 34px;
 }
