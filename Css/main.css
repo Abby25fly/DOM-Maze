@@ -1,6 +1,7 @@
 h1{
+  background-image: url("wood.jpg");
   font-size: 60px;
-  color: black;
+  color: #231101;
   font-family: cursive;
 }
 
@@ -9,6 +10,19 @@ body {
     text-align: center;
 }
 
+nav {
+    float: right;
+    max-width:160px;
+    margin: 80px 100px 10px 30px;
+}
+
+table{
+    margin: 40px;
+    padding: 3em;
+    overflow: hidden;
+    border-spacing: 0px;
+    border: 0px;
+}
 .colorPared{
   background-image: url("block2.png");
   background-size: 34px 34px;
@@ -22,24 +36,24 @@ body {
 }
 
 .colorStart{
-  background-image: url("start2.png");
+  background-color: maroon;
   background-size: 34px 34px;
 }
 .colorEnd{
-  background-color: orange;
+  background-color: #d16806;
 }
 
 button {
     background-color: #30302e;
     border: none;
     color: white;
-    padding: 12px 29px;
+    padding: 15px 32px;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
+    font-size: 20px;
+    margin: 12px 2px;
     cursor: pointer;
 }
 
