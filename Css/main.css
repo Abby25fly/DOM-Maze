@@ -5,6 +5,11 @@ h1{
   font-family: cursive;
 }
 
+h3{
+  font-size: 20px;
+  color: white;
+}
+
 body {
     background-image: url("greengrass.jpg");
     text-align: center;
@@ -13,7 +18,7 @@ body {
 nav {
     float: right;
     max-width:160px;
-    margin: 80px 100px 10px 30px;
+    margin: 40px 100px 10px 30px;
 }
 
 table{
@@ -29,19 +34,24 @@ table{
 }
 
 .colorLaberinto{
-  background-color: #095606;
-}
-.colorLaberinto:hover{
-  background-color: silver;
+  background-image: url("grass.png");
+  background-size: 34px 34px;
+
 }
 
 .colorStart{
-  background-color: maroon;
+  background-image: url("flecha.png");
   background-size: 34px 34px;
 }
 .colorEnd{
-  background-color: #d16806;
+  background-image: url("star.jpg");
+  background-size: 34px 34px;
 }
+
+img {
+			width: 100%;
+			height: auto;
+	}
 
 button {
     background-color: #30302e;
